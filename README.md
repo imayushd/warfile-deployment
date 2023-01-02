@@ -1,0 +1,2 @@
+# warfile-deployment
+warfile deploy
