@@ -1,0 +1,24 @@
+Jfrog installation steps
+1.First we have to launch the instance
+	-ec2-instance
+	-t2.medium
+	-launch instance
+2.Connect instance through Mobasterm
+	-remote public ip
+	-username
+	-key in .pem file
+3.In Mobasterm terminal
+	-sudo su - (convert ec2-user to complete root user)
+	- wget https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/oss/jfrog-artifactory-oss/[RELEASE]/jfrog-artifactory-oss-[RELEASE]-linux.tar.gz?_gl=1*1li7shh*_ga*NDE5NTQ4Mzk4LjE2NTc3OTg1NTM.*_ga_SQ1NR9VTFJ*MTY1Nzg3NzAzNi40LjEuMTY1Nzg3NzA4NS4xMQ..
+4.type 
+	tar -zvxf jfrog-artifactory-oss-\[RELEASE\]-linux.tar.gz\?_gl\=1\*1li7shh\*_ga\*NDE5NTQ4Mzk4LjE2NTc3OTg1NTM.\*_ga_SQ1NR9VTFJ\*MTY1Nzg3NzAzNi40LjEuMTY1Nzg3NzA4NS4xMQ..
+5.type
+	 ./artifactory-oss-7.49.3/app/bin/artifactoryctl
+6.
+Now in webbrowser provide public ip with port 8082
+eg- 13.233.84.145:8082
+7.provide username -admin
+	  password -password
+8.Again give new password
+	password -Admin@123
+9.Finish now terminate instance
